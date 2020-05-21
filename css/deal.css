@@ -1,0 +1,178 @@
+/*
+	navigation deal
+
+	-header
+	-map
+	-deal
+	-form
+*/
+
+/*map*/
+
+.map {
+	background: url("../img/deal/Карта 1.png") 100% 100% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+}
+
+/*deal*/
+
+.deal {
+	background: #0F0E17;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	padding-top: 100px;
+	padding-bottom: 100px
+}
+
+.deal__cont {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.deal__text {
+	color: #fff;
+	font-size: 20px;
+	margin: 10px 50px;
+}
+
+.tl {
+	text-align: left;
+}
+
+.tr {
+	text-align: right;
+}
+
+/*form*/
+
+.form__title {
+	font-size: 25px;
+	line-height: 28px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	width: 40%;
+	margin: 60px auto;
+}
+
+.form__inp {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.form__inp input {
+	width: 250px;
+	height: 40px;	
+	color: #000;
+	padding: 10px;
+}
+
+textarea {
+	padding: 10px;	
+}
+
+.btn__send {
+	width: 250px;
+	height: 35px;
+	margin: 10px auto;
+	background-color: transparent;
+	border: .5px solid #C4C4C4;
+	border-radius: 10px;
+}
+
+@media(max-width: 450px) {
+	.nav__link {
+		margin-left: 115px;
+		margin-top: 15px;
+	}
+
+	.deal__cont {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.deal__text {
+		margin: 10px 10px;
+		text-align: center;
+	}	
+
+	.form {
+		width: 100%;
+	}
+
+	.form__inp {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.form__inp input {
+		margin: 20px auto;
+		width: 200px;
+	}
+
+	textarea {
+		width: 80%;	
+		margin: 0 auto !important;	
+	}
+}
+
+@media(max-width: 320px) {
+	.form__inp input {
+		margin: 17px auto;
+		width: 190px;
+	}
+
+	textarea {
+		width: 75%;	
+		margin: 0 auto !important;	
+	}
+}
